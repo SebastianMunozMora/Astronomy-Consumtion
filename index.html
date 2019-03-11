@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="./scripts/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<script src="./scripts/apiapod.js"></script>
+	<script src="./scripts/date_web_worker.js"></script>
+	<script src="./scripts/time_web_worker.js"></script>
+	<script src="./scripts/date_pick.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Astronomy Picture</title>
+	<link rel="shortcut icon" id="shortcut" href=""/>
+</head>
+
+<body>
+	<header>
+		<h1>Astronomy Picture of The Day</h1>
+		<h3 id="title">Title</h3>
+		<h4 id="clock">Clock</h4>
+		<h4 id="calendar">calendar</h4>
+	</header>
+	<div class="table">
+		<div class="column" id="pics">
+			<img alt="picture" id="picture">
+			<iframe alt="video"id="video"
+				src="" frameBorder="0">
+			</iframe>
+		</div>
+		<div class="column">
+			<p id="date">date</p>
+			<p id="explanation">explanation</p>
+			<select id="month" class="calbutton">month</select>
+			<select id="year" class="calbutton">year</select>
+			<hr>
+			<div id="datepick"></div>
+		</div>
+	</div>
+</body>
+</html>

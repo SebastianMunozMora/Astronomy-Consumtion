@@ -71,7 +71,7 @@ function addDayNumber(i,date) {
 
 function buttonFunction(id,dates) {
     date.day = id;
-    console.log("ButtonFunction date :"+makeDate(dates));
+    //console.log("ButtonFunction date :"+makeDate(dates));
     requestApodUrl(makeDate(dates), updateGui, id);
 }
 

@@ -50,7 +50,7 @@ function calendarChange(){
     newDate.year = Number(yearOptions)
     var days = daysInMonth(newDate.month+1, newDate.year)
     resetCalendar(); 
-    console.log("month: " + newDate.month + " year: " + yearOptions + " days: " + days); 
+    //console.log("month: " + newDate.month + " year: " + yearOptions + " days: " + days); 
     calendarDays(newDate,days)
 }
 function startWebWorker() {

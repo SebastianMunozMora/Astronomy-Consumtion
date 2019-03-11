@@ -4,12 +4,12 @@ var jsondatap;
 function requestApodUrl(date, cFunction, id) {
     var xhttp = new XMLHttpRequest();
     urlApod = "https://api.nasa.gov/planetary/apod?date=" + date + "&api_key=M22XMqutA4v0lV7VZa3MokSdW6jLPnB9ZcSKNn1n"
-    console.log(urlApod);
+    //console.log(urlApod);
     xhttp.open("GET", urlApod, true);
     xhttp.send();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        console.warn(this.responseText);
+        //console.warn(this.responseText);
         json = JSON.parse(this.responseText);
         jsondata = { 
           title: json.title,
@@ -37,12 +37,12 @@ function updateGui(jsondata){
     document.getElementById("picture").style.display = "block"
     //document.getElementById("video").style.display = "none"
     document.getElementById("picture").src = jsondata.url;
-    console.log(jsondata.mediaType)
+    //console.log(jsondata.mediaType)
   } else {
     document.getElementById("video").style.display = "block"
     //document.getElementById("picture").style.display = "none"
     document.getElementById("video").src = jsondata.url;
-    console.log(jsondata.mediaType)
+    //console.log(jsondata.mediaType)
   }
   
 
